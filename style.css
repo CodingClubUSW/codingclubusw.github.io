@@ -138,9 +138,9 @@ body {
     border-radius: 10px;
     overflow: hidden;
     position: absolute;
-    top: 50%;
+    top: 120px;
     left: 50%;
-    transform: translate(-50%, -60%);
+    transform: translate(-50%);
 }
 
 .slides {
@@ -243,7 +243,7 @@ body {
 
 .quote {
     position: absolute;
-    top: 80%;
+    top: 790px;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
@@ -252,9 +252,9 @@ body {
 
 .join-btn {
     position: relative;
-    bottom: -800px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    top: 780px;
+    transform: translate(-50%);
 
     width: 200px;
     height: 70px;
