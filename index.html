@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Club</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <ul class="nav-bar">
+            <li class="logo">CODE CLUB</li>
+            <input type="checkbox" id="check">
+            <span class="menu">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#join">JOIN</a></li>
+                <li><a href="#committee">COMMITTEE</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </ul>
+    </header>
+
+    <!-- Image Slider Start -->
+    <div class="slider">
+        <div class="slides">
+            <!-- Radio Buttons Start -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!--  Radio Buttons End  -->
+
+            <!-- Slide Images Start -->
+            <div class="slide first">
+                <img src="img/1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/3.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/4.jpg" alt="">
+            </div>
+            <!--  Slide Images End  -->
+
+            <!-- Automatic Navigation Start -->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <!--  Automatic Navigation End  -->
+        </div>
+        <!-- Manual Navigation Start -->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--  Manual Navigation End  -->
+    </div>
+    <!--  Image Slider End  -->
+
+    <!-- Auto Image Slider Script -->
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 4){
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+    <!-- Auto Image Slider Script -->
+
+    <div class="quote">
+        <p>"CODE CLUB helped me join code club and code during code club. This is obviously a placeholder quote. If you read this, you stink."</p>
+    </div>
+
+    <button onclick="location.href='#home'" type="button" class="join-btn">
+        <span></span>
+            Join!
+    </button> 
+
+</body>
+</html>
