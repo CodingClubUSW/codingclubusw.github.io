@@ -14,7 +14,8 @@ body {
     --carouselw: 1500px;
     --carouselh: 600px;
 
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: visible;
 }
 
 .nav-bar {
