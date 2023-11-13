@@ -11,7 +11,7 @@ body {
     --color1: #fff;
     --color2: #d30831;
 
-    --carouselw: 1500px;
+    --carouselw: 80vw;
     --carouselh: 600px;
 
     overflow-x: hidden;
@@ -104,7 +104,7 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 80%;
+        width: 40vw;
         height: 100vh;
         position: fixed;
         top: 0;
@@ -162,6 +162,7 @@ body {
 .slide img {
     width: var(--carouselw);
     height: var(--carouselh);
+    object-fit: cover;
 }
 
 .navigation-manual {
@@ -277,41 +278,6 @@ body {
 
 .join-btn:hover,
 .join-btn:focus-visible {
-    background: var(--color1);
-    color: #000;
-}
-
-.join-btn > span {
-    position: absolute;
-    z-index: -1;
-    width: 33.333%;
-    height: 100%;
-
-    background: transparent;
-    opacity: 0.5;
-    transition: color 500ms;
-}
-
-.join-btn::before {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    background: var(--color2);
-    width: 10%;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    inset: 0;
-    margin: auto;
-    opacity: 0;
-    transition: transform 1000ms, opacity 500ms;
-}
-
-.join-btn:active::before {
-    transform: scale(20);
-    opacity: 1;
-}
-
-.join-btn:active {
+    background: #9d0725;
     color: #fff;
-    transition: color 500ms;
 }
