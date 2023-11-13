@@ -319,11 +319,27 @@ body {
     }
 
     .quote {
-        position: relative;
-        top: 58vh;
+        position: fixed;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
     }
 
     .join-btn {
-        top: 525px;
+        position: fixed;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 14vh;
+    }
+
+    .quotebtn {
+        position: absolute;
+        height: 20vh;
+        width: 90vw;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
